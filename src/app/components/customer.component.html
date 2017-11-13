@@ -1,0 +1,36 @@
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <img style="width:45px;height:45px;float:left;" src="assets/images/common/case_logo.png" class="pure-img">
+      <a class="pure-menu-heading" href="https://www.ibm.com/devops/method/category/architectures/" target="_blank">IBM Cloud Architecture</a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a class="pure-menu-link" routerLink="/">Home</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" routerLink="/catalog">Catalog</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link" routerLink="/customer">Profile</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-wrapper" style="left:50px;">
+    <div class="content">
+      <h2 class="section-heading">Please review your profile</a></h2>
+    </div>
+  
+    <div class="content">
+      <div class="content">
+            <img style="border-radius: 50%" src="{{customerInfo.image || 'assets/images/common/ibmprofile.jpg'}}" class="pure-img">
+      </div>
+      <div class="content" style="padding-top:20px;">
+          <span class="profileColor">First Name: </span><span class="profileColor">{{customerInfo.firstName || 'N/A'}}</span>
+      </div>
+      <div class="content">
+          <span class="profileColor">Last Name: </span><span class="profileColor">{{customerInfo.lastName || 'N/A'}}</span>
+      </div>
+      <div class="content">
+          <span class="profileColor">Email: </span><span class="profileColor">{{customerInfo.email || 'N/A'}}</span>
+      </div>
+      <div class="content">
+          <span class="profileColor">Username: </span><span class="profileColor">{{customerInfo.username || 'N/A'}}</span>
+      </div>
+  
+    </div>
+  </div>
+  
